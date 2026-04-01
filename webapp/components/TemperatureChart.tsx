@@ -53,9 +53,9 @@ export default function TemperatureChart({ daily }: TemperatureChartProps) {
         <span className="text-orange-400 font-medium">■</span> Máx &nbsp;
         <span className="text-blue-400 font-medium">■</span> Mín
       </p>
-      <div className="h-48">
+      <div className="h-52">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
+          <AreaChart data={chartData} margin={{ top: 5, right: 10, left: -10, bottom: 0 }}>
             <defs>
               <linearGradient id="colorMax" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#fb923c" stopOpacity={0.4} />

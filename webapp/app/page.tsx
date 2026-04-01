@@ -93,7 +93,7 @@ export default function Home() {
 
         {/* Last updated */}
         {lastUpdated && !loading && (
-          <p className="text-white/30 text-xs mb-4 text-right">
+          <p className="text-white/50 text-xs mb-4 text-right">
             Actualizado: {lastUpdated.toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" })}
           </p>
         )}
@@ -147,9 +147,9 @@ export default function Home() {
         </AnimatePresence>
 
         {/* Footer */}
-        <p className="text-center text-white/20 text-xs mt-8">
+        <p className="text-center text-white/40 text-xs mt-8">
           Datos provistos por{" "}
-          <span className="text-white/40">Open-Meteo</span>
+          <span className="text-white/60">Open-Meteo</span>
         </p>
       </div>
     </main>

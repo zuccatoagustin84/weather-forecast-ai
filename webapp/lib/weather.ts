@@ -64,88 +64,88 @@ export function getWeatherInfo(code: number): WeatherInfo {
     return {
       label: "Despejado",
       emoji: "☀️",
-      bg: "from-amber-400 to-orange-500",
-      textColor: "text-amber-600",
-      gradientFrom: "#fbbf24",
-      gradientTo: "#f97316",
+      bg: "from-orange-500 via-amber-600 to-orange-800",
+      textColor: "text-amber-200",
+      gradientFrom: "#f97316",
+      gradientTo: "#92400e",
     };
   }
   if (code <= 2) {
     return {
       label: "Parcialmente nublado",
       emoji: "⛅",
-      bg: "from-blue-300 to-slate-400",
-      textColor: "text-blue-500",
-      gradientFrom: "#93c5fd",
-      gradientTo: "#94a3b8",
+      bg: "from-sky-500 via-blue-600 to-slate-700",
+      textColor: "text-sky-200",
+      gradientFrom: "#0ea5e9",
+      gradientTo: "#334155",
     };
   }
   if (code === 3) {
     return {
       label: "Nublado",
       emoji: "☁️",
-      bg: "from-slate-400 to-slate-600",
-      textColor: "text-slate-500",
-      gradientFrom: "#94a3b8",
-      gradientTo: "#475569",
+      bg: "from-slate-500 via-slate-600 to-slate-800",
+      textColor: "text-slate-200",
+      gradientFrom: "#64748b",
+      gradientTo: "#1e293b",
     };
   }
   if (code <= 48) {
     return {
       label: "Neblina",
       emoji: "🌫️",
-      bg: "from-gray-400 to-gray-600",
-      textColor: "text-gray-500",
-      gradientFrom: "#9ca3af",
-      gradientTo: "#4b5563",
+      bg: "from-gray-500 via-gray-600 to-slate-800",
+      textColor: "text-gray-200",
+      gradientFrom: "#6b7280",
+      gradientTo: "#1e293b",
     };
   }
   if (code <= 55) {
     return {
       label: "Llovizna",
       emoji: "🌦️",
-      bg: "from-blue-400 to-blue-600",
-      textColor: "text-blue-500",
-      gradientFrom: "#60a5fa",
-      gradientTo: "#2563eb",
+      bg: "from-blue-500 via-blue-600 to-blue-800",
+      textColor: "text-blue-200",
+      gradientFrom: "#3b82f6",
+      gradientTo: "#1e3a8a",
     };
   }
   if (code <= 67) {
     return {
       label: "Lluvia",
       emoji: "🌧️",
-      bg: "from-blue-500 to-indigo-700",
-      textColor: "text-blue-600",
-      gradientFrom: "#3b82f6",
-      gradientTo: "#4338ca",
+      bg: "from-blue-600 via-indigo-700 to-indigo-900",
+      textColor: "text-blue-200",
+      gradientFrom: "#2563eb",
+      gradientTo: "#312e81",
     };
   }
   if (code <= 77) {
     return {
       label: "Nieve",
       emoji: "❄️",
-      bg: "from-sky-200 to-blue-400",
-      textColor: "text-sky-500",
-      gradientFrom: "#bae6fd",
-      gradientTo: "#60a5fa",
+      bg: "from-sky-500 via-blue-600 to-blue-800",
+      textColor: "text-sky-200",
+      gradientFrom: "#0ea5e9",
+      gradientTo: "#1e3a8a",
     };
   }
   if (code <= 82) {
     return {
       label: "Chubascos",
       emoji: "🌦️",
-      bg: "from-blue-400 to-blue-700",
-      textColor: "text-blue-600",
-      gradientFrom: "#60a5fa",
-      gradientTo: "#1d4ed8",
+      bg: "from-blue-500 via-blue-700 to-blue-900",
+      textColor: "text-blue-200",
+      gradientFrom: "#3b82f6",
+      gradientTo: "#1e3a8a",
     };
   }
   if (code <= 99) {
     return {
       label: "Tormenta",
       emoji: "⛈️",
-      bg: "from-gray-700 to-gray-900",
-      textColor: "text-gray-600",
+      bg: "from-gray-700 via-gray-800 to-gray-900",
+      textColor: "text-gray-200",
       gradientFrom: "#374151",
       gradientTo: "#111827",
     };
@@ -153,10 +153,10 @@ export function getWeatherInfo(code: number): WeatherInfo {
   return {
     label: "Desconocido",
     emoji: "🌡️",
-    bg: "from-gray-400 to-gray-600",
-    textColor: "text-gray-500",
-    gradientFrom: "#9ca3af",
-    gradientTo: "#4b5563",
+    bg: "from-slate-500 via-slate-700 to-slate-900",
+    textColor: "text-slate-200",
+    gradientFrom: "#64748b",
+    gradientTo: "#0f172a",
   };
 }
 
